@@ -1,0 +1,37 @@
+{
+  "source_id": "banco_mundial_wdi_empleo_pib_desempleo",
+  "retrieved_at_utc": "2026-07-31T05:51:03.827869+00:00",
+  "countries": [
+    "ECU",
+    "VEN",
+    "ARG",
+    "COL"
+  ],
+  "requested_years": "2020:2025",
+  "files": [
+    {
+      "file": "wdi_SL.EMP.TOTL.SP.ZS_ECU_VEN_ARG_COL_2020_2025.json",
+      "variable": "SL.EMP.TOTL.SP.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU;VEN;ARG;COL/indicator/SL.EMP.TOTL.SP.ZS?date=2020:2025&format=json&per_page=100",
+      "sha256": "729e50bc94b59595048a3e9b33020a018bb6754d2cbb987bf1f33ae97a79a6b8"
+    },
+    {
+      "file": "wdi_NY.GDP.PCAP.KD.ZG_ECU_VEN_ARG_COL_2020_2025.json",
+      "variable": "NY.GDP.PCAP.KD.ZG",
+      "url": "https://api.worldbank.org/v2/country/ECU;VEN;ARG;COL/indicator/NY.GDP.PCAP.KD.ZG?date=2020:2025&format=json&per_page=100",
+      "sha256": "aced6da36c9de59016f3a3080866470e0baf6f14f7a9261212de02e3ee967943"
+    },
+    {
+      "file": "wdi_SL.UEM.TOTL.ZS_ECU_VEN_ARG_COL_2020_2025.json",
+      "variable": "SL.UEM.TOTL.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU;VEN;ARG;COL/indicator/SL.UEM.TOTL.ZS?date=2020:2025&format=json&per_page=100",
+      "sha256": "22848eb0684d18bff7688f920af732328ca5f5e91d0089b4fe9834a16cd21bc5"
+    },
+    {
+      "file": "wdi_IT.NET.USER.ZS_ECU_VEN_ARG_COL_2020_2025.json",
+      "variable": "IT.NET.USER.ZS",
+      "url": "https://api.worldbank.org/v2/country/ECU;VEN;ARG;COL/indicator/IT.NET.USER.ZS?date=2020:2025&format=json&per_page=100",
+      "sha256": "20009d3f51c3ec7d650f38490a7be215a1c931c5f8b55fac8c3c78c030aa500b"
+    }
+  ]
+}

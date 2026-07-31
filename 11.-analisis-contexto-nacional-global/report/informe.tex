@@ -1,0 +1,378 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Tabla de contenidos}
+\else
+  \newcommand\contentsname{Tabla de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabla}
+\else
+  \newcommand\tablename{Tabla}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Análisis del contexto nacional y global},
+  pdfauthor={Equipo: por definir},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Análisis del contexto nacional y global}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Transformación digital y empleo}
+\author{Equipo: por definir}
+\date{2026-07-31}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Tabla de contenidos}
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+\section{Resumen ejecutivo}\label{resumen-ejecutivo}
+
+Este informe analiza descriptivamente la relación entre conectividad
+digital y empleo en Ecuador, Argentina, Colombia y Venezuela durante
+2020--2024. Se emplean 80 observaciones país-año de indicadores del
+Banco Mundial (WDI); el indicador de uso de internet procede
+originalmente de la Unión Internacional de Telecomunicaciones (UIT). La
+validación no detectó duplicados ni valores faltantes en el periodo
+analítico.
+
+Entre 2020 y 2024 aumentaron el uso de internet y la tasa de
+empleo/población en los cuatro países. Una regresión exploratoria con
+efectos fijos por país estima una asociación positiva entre uso de
+internet y empleo, pero no identifica un efecto causal. La muestra
+contiene solo 20 observaciones para el modelo y cuatro países; por ello
+los resultados deben leerse como evidencia descriptiva y exploratoria.
+
+\section{Planteamiento del problema y
+objetivos}\label{planteamiento-del-problema-y-objetivos}
+
+La pregunta de investigación es: ¿cómo se relaciona el avance de la
+conectividad digital con la tasa de empleo de la población de 15 años o
+más en Ecuador, Argentina, Venezuela y Colombia durante 2020--2024?
+
+El objetivo general es analizar esa relación y comparar la evolución de
+Ecuador con los tres países seleccionados. Los objetivos específicos son
+describir los indicadores digitales y laborales, realizar la comparación
+regional y estimar una asociación exploratoria controlando por el
+crecimiento real del PIB per cápita.
+
+\section{Fuentes y metodología}\label{fuentes-y-metodologuxeda}
+
+La fuente de descarga es
+\href{https://databank.worldbank.org/source/world-development-indicators}{World
+Development Indicators del Banco Mundial}. Se utilizaron: tasa de
+empleo/población, 15+ (\texttt{SL.EMP.TOTL.SP.ZS}); crecimiento anual
+del PIB real per cápita (\texttt{NY.GDP.PCAP.KD.ZG}); desempleo total
+(\texttt{SL.UEM.TOTL.ZS}); y uso de internet (\texttt{IT.NET.USER.ZS}).
+Este último tiene como fuente primaria la
+\href{https://datahub.itu.int/}{UIT DataHub}.
+
+Las respuestas originales se conservaron en \texttt{data/raw/} con un
+manifiesto de URL y huellas SHA-256. El periodo 2025 se excluyó del
+análisis porque el indicador de uso de internet no tenía valores para
+los cuatro países. No se imputaron ni corrigieron valores.
+
+La variable de resultado es la tasa de empleo/población de 15 años o
+más. La variable explicativa principal es el porcentaje de personas que
+usan internet; el crecimiento del PIB real per cápita es un control. El
+desempleo se usa solo como indicador descriptivo por su relación
+contable con el empleo.
+
+\section{Procesamiento y
+validación}\label{procesamiento-y-validaciuxf3n}
+
+El conjunto procesado contiene 80 observaciones: cuatro países, cinco
+años y cuatro indicadores. La validación de datos brutos verificó
+integridad por SHA-256, esquema, claves país-año, duplicados, cobertura
+y faltantes. Para 2020--2024 no hubo valores nulos ni claves duplicadas.
+El reporte completo está en \texttt{outputs/reports/data\_quality.md}.
+
+\section{Resultados descriptivos}\label{resultados-descriptivos}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1111}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+País
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Internet 2020
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Internet 2024
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Cambio (pp)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Empleo 2020
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Empleo 2024
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Cambio (pp)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Argentina & 85.51 & 89.67 & 4.15 & 49.60 & 57.44 & 7.84 \\
+Colombia & 69.80 & 79.35 & 9.55 & 53.28 & 57.42 & 4.14 \\
+Ecuador & 70.70 & 77.17 & 6.47 & 56.36 & 62.31 & 5.95 \\
+Venezuela & 72.44 & 76.68 & 4.24 & 44.55 & 49.28 & 4.73 \\
+\end{longtable}
+}
+
+Los cuatro países registran aumentos simultáneos de conectividad y
+empleo en el periodo. Esta coincidencia no permite atribuir el cambio
+laboral únicamente a la digitalización: también intervienen ciclo
+económico, políticas públicas, estructura sectorial y condiciones
+institucionales.
+
+\section{Análisis econométrico
+exploratorio}\label{anuxe1lisis-economuxe9trico-exploratorio}
+
+Se estimó la ecuación:
+
+\[Empleo_{it}=\alpha_i+\beta Internet_{it}+\gamma CrecimientoPIBpc_{it}+\varepsilon_{it}.\]
+
+El modelo usa efectos fijos por país y errores estándar HC3. El
+coeficiente estimado para uso de internet fue 0.427 puntos porcentuales
+de empleo por cada punto porcentual adicional de uso de internet; el
+intervalo aproximado al 95\% fue de 0.085 a 0.770. El coeficiente del
+crecimiento del PIB real per cápita fue 0.132. Los resultados completos
+están en \texttt{outputs/tables/model\_results.csv}.
+
+No se incluyen efectos fijos de año por el tamaño reducido de la
+muestra. Los valores p son orientativos y no sustentan una
+interpretación causal.
+
+\section{Riesgos, oportunidades y recomendaciones para
+Ecuador}\label{riesgos-oportunidades-y-recomendaciones-para-ecuador}
+
+El aumento observado de uso de internet coincide con una mejora de la
+tasa de empleo ecuatoriana en el periodo. Esto es compatible con
+mecanismos como mejor acceso a información, mercados y oportunidades de
+trabajo, pero no demuestra que uno cause el otro.
+
+Se recomienda ampliar el estudio con más países o información
+subnacional y microdatos, incorporar indicadores de calidad y
+asequibilidad de conectividad, y distinguir empleo formal, informal,
+juvenil y por sexo. Cualquier decisión de política debe complementarse
+con evidencia causal y contexto institucional.
+
+\section{Limitaciones}\label{limitaciones}
+
+\begin{itemize}
+\tightlist
+\item
+  Muestra pequeña: cuatro países y cinco años.
+\item
+  El indicador de conectividad mide uso de internet, no calidad,
+  habilidades digitales ni tipo de empleo.
+\item
+  Las estimaciones laborales modeladas mejoran comparabilidad, pero no
+  sustituyen el análisis de fuentes nacionales.
+\item
+  El estudio documenta asociaciones; no identifica causalidad.
+\end{itemize}
+
+\section{Referencias}\label{referencias}
+
+\begin{itemize}
+\tightlist
+\item
+  Banco Mundial. \emph{World Development Indicators}.
+  https://databank.worldbank.org/source/world-development-indicators
+\item
+  Unión Internacional de Telecomunicaciones. \emph{ITU DataHub}.
+  https://datahub.itu.int/
+\item
+  Organización Internacional del Trabajo. \emph{ILOSTAT}.
+  https://ilostat.ilo.org/data/bulk/
+\end{itemize}
+
+\section{Anexos}\label{anexos}
+
+Los archivos \texttt{data/raw/wdi\_manifest\_2020\_2025.json},
+\texttt{data/processed/processing\_manifest.json},
+\texttt{outputs/reports/data\_quality.md} y
+\texttt{outputs/tables/model\_results.csv} contienen la trazabilidad
+técnica del análisis.
+
+
+
+
+\end{document}

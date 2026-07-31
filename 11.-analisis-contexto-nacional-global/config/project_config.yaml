@@ -1,0 +1,20 @@
+project:
+  title: "Análisis del contexto nacional y global"
+  institution: "Universidad Técnica de Cotopaxi"
+  program: "Economía"
+  course: "Análisis del Contexto Nacional y Global"
+  problem: "Transformación digital y empleo"
+  countries: ["Ecuador", "Venezuela", "Argentina", "Colombia"]
+  period: {start: 2020, end: 2024}
+  frequency: "anual"
+  indicators:
+    - "Personas que usan internet (% de la población)"
+    - "Tasa de empleo/población, 15+ (%)"
+    - "Crecimiento anual del PIB real per cápita (%)"
+    - "Tasa de desempleo total (%)"
+  github_url: ""
+  vercel_url: ""
+governance:
+  human_approval_required: true
+  minimum_source_date: "2026-01-01"
+  prohibit_fabricated_data: true

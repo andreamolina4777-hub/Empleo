@@ -1,0 +1,642 @@
+[
+  {
+    "country": "Argentina",
+    "year": 2020,
+    "indicator": "Uso de internet (% de población)",
+    "value": 85.51438646,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2021,
+    "indicator": "Uso de internet (% de población)",
+    "value": 87.15070683,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2022,
+    "indicator": "Uso de internet (% de población)",
+    "value": 88.37535691,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2023,
+    "indicator": "Uso de internet (% de población)",
+    "value": 89.22897166,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2024,
+    "indicator": "Uso de internet (% de población)",
+    "value": 89.66715228,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2020,
+    "indicator": "Uso de internet (% de población)",
+    "value": 69.79533474,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2021,
+    "indicator": "Uso de internet (% de población)",
+    "value": 73.02837449,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2022,
+    "indicator": "Uso de internet (% de población)",
+    "value": 72.79637855,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2023,
+    "indicator": "Uso de internet (% de población)",
+    "value": 77.33686322,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2024,
+    "indicator": "Uso de internet (% de población)",
+    "value": 79.34543299,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2020,
+    "indicator": "Uso de internet (% de población)",
+    "value": 70.7,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2021,
+    "indicator": "Uso de internet (% de población)",
+    "value": 69.1147995,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2022,
+    "indicator": "Uso de internet (% de población)",
+    "value": 69.71811356,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2023,
+    "indicator": "Uso de internet (% de población)",
+    "value": 72.6943146,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2024,
+    "indicator": "Uso de internet (% de población)",
+    "value": 77.17273115,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2020,
+    "indicator": "Uso de internet (% de población)",
+    "value": 72.44110107,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2021,
+    "indicator": "Uso de internet (% de población)",
+    "value": 74.11219788,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2022,
+    "indicator": "Uso de internet (% de población)",
+    "value": 75.82180023,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2023,
+    "indicator": "Uso de internet (% de población)",
+    "value": 76.33190155,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2024,
+    "indicator": "Uso de internet (% de población)",
+    "value": 76.67890167,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2020,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -10.3361096878518,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2021,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 10.1485599877349,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2022,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 5.79747980169367,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2023,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -2.13703473540124,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2024,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -1.68352700528746,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2020,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -8.50949477621059,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2021,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 9.5929782838861,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2022,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 6.18779953705864,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2023,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -0.282233597731121,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2024,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 0.408620603822158,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2020,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -10.3108339169142,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2021,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 8.57789544186942,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2022,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 5.0282959697896,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2023,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 0.948258262430642,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2024,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -2.7842885423931,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2020,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": -28.6057438496512,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2021,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 1.3599718379524,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2022,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 8.16956905683747,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2023,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 3.70013368160016,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2024,
+    "indicator": "Crecimiento anual del PIB real per cápita (%)",
+    "value": 5.13594862074156,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2020,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 49.602,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2021,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 55.085,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2022,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 57.3,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2023,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 58.463,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2024,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 57.439,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2020,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 53.279,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2021,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 55.389,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2022,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 56.498,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2023,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 57.623,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2024,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 57.418,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2020,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 56.361,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2021,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 62.728,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2022,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 63.388,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2023,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 62.225,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2024,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 62.311,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2020,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 44.55,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2021,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 45.195,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2022,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 48.01,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2023,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 48.589,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2024,
+    "indicator": "Empleo/población, 15+ (%)",
+    "value": 49.28,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2020,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 11.461,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2021,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 8.736,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2022,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 6.805,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2023,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 6.139,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Argentina",
+    "year": 2024,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 7.15,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2020,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 15.983,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2021,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 13.898,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2022,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 10.541,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2023,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 9.591,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Colombia",
+    "year": 2024,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 9.619,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2020,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 6.116,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2021,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 4.504,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2022,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 3.713,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2023,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 3.51,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Ecuador",
+    "year": 2024,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 3.453,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2020,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 7.53,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2021,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 7.027,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2022,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 5.646,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2023,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 5.407,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  },
+  {
+    "country": "Venezuela",
+    "year": 2024,
+    "indicator": "Desempleo total (% de la fuerza laboral)",
+    "value": 5.321,
+    "source": "Banco Mundial, WDI; uso de internet: UIT",
+    "period": "2020–2024"
+  }
+]

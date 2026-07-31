@@ -1,0 +1,79 @@
+---
+title: "Análisis del contexto nacional y global"
+subtitle: "Transformación digital y empleo"
+author: "Equipo: por definir"
+date: today
+lang: es
+format:
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+# Resumen ejecutivo
+
+Este informe analiza descriptivamente la relación entre conectividad digital y empleo en Ecuador, Argentina, Colombia y Venezuela durante 2020–2024. Se emplean 80 observaciones país-año de indicadores del Banco Mundial (WDI); el indicador de uso de internet procede originalmente de la Unión Internacional de Telecomunicaciones (UIT). La validación no detectó duplicados ni valores faltantes en el periodo analítico.
+
+Entre 2020 y 2024 aumentaron el uso de internet y la tasa de empleo/población en los cuatro países. Una regresión exploratoria con efectos fijos por país estima una asociación positiva entre uso de internet y empleo, pero no identifica un efecto causal. La muestra contiene solo 20 observaciones para el modelo y cuatro países; por ello los resultados deben leerse como evidencia descriptiva y exploratoria.
+
+# Planteamiento del problema y objetivos
+
+La pregunta de investigación es: ¿cómo se relaciona el avance de la conectividad digital con la tasa de empleo de la población de 15 años o más en Ecuador, Argentina, Venezuela y Colombia durante 2020–2024?
+
+El objetivo general es analizar esa relación y comparar la evolución de Ecuador con los tres países seleccionados. Los objetivos específicos son describir los indicadores digitales y laborales, realizar la comparación regional y estimar una asociación exploratoria controlando por el crecimiento real del PIB per cápita.
+
+# Fuentes y metodología
+
+La fuente de descarga es [World Development Indicators del Banco Mundial](https://databank.worldbank.org/source/world-development-indicators). Se utilizaron: tasa de empleo/población, 15+ (`SL.EMP.TOTL.SP.ZS`); crecimiento anual del PIB real per cápita (`NY.GDP.PCAP.KD.ZG`); desempleo total (`SL.UEM.TOTL.ZS`); y uso de internet (`IT.NET.USER.ZS`). Este último tiene como fuente primaria la [UIT DataHub](https://datahub.itu.int/).
+
+Las respuestas originales se conservaron en `data/raw/` con un manifiesto de URL y huellas SHA-256. El periodo 2025 se excluyó del análisis porque el indicador de uso de internet no tenía valores para los cuatro países. No se imputaron ni corrigieron valores.
+
+La variable de resultado es la tasa de empleo/población de 15 años o más. La variable explicativa principal es el porcentaje de personas que usan internet; el crecimiento del PIB real per cápita es un control. El desempleo se usa solo como indicador descriptivo por su relación contable con el empleo.
+
+# Procesamiento y validación
+
+El conjunto procesado contiene 80 observaciones: cuatro países, cinco años y cuatro indicadores. La validación de datos brutos verificó integridad por SHA-256, esquema, claves país-año, duplicados, cobertura y faltantes. Para 2020–2024 no hubo valores nulos ni claves duplicadas. El reporte completo está en `outputs/reports/data_quality.md`.
+
+# Resultados descriptivos
+
+| País | Internet 2020 | Internet 2024 | Cambio (pp) | Empleo 2020 | Empleo 2024 | Cambio (pp) |
+|---|---:|---:|---:|---:|---:|---:|
+| Argentina | 85.51 | 89.67 | 4.15 | 49.60 | 57.44 | 7.84 |
+| Colombia | 69.80 | 79.35 | 9.55 | 53.28 | 57.42 | 4.14 |
+| Ecuador | 70.70 | 77.17 | 6.47 | 56.36 | 62.31 | 5.95 |
+| Venezuela | 72.44 | 76.68 | 4.24 | 44.55 | 49.28 | 4.73 |
+
+Los cuatro países registran aumentos simultáneos de conectividad y empleo en el periodo. Esta coincidencia no permite atribuir el cambio laboral únicamente a la digitalización: también intervienen ciclo económico, políticas públicas, estructura sectorial y condiciones institucionales.
+
+# Análisis econométrico exploratorio
+
+Se estimó la ecuación:
+
+$$Empleo_{it}=\alpha_i+\beta Internet_{it}+\gamma CrecimientoPIBpc_{it}+\varepsilon_{it}.$$
+
+El modelo usa efectos fijos por país y errores estándar HC3. El coeficiente estimado para uso de internet fue 0.427 puntos porcentuales de empleo por cada punto porcentual adicional de uso de internet; el intervalo aproximado al 95% fue de 0.085 a 0.770. El coeficiente del crecimiento del PIB real per cápita fue 0.132. Los resultados completos están en `outputs/tables/model_results.csv`.
+
+No se incluyen efectos fijos de año por el tamaño reducido de la muestra. Los valores p son orientativos y no sustentan una interpretación causal.
+
+# Riesgos, oportunidades y recomendaciones para Ecuador
+
+El aumento observado de uso de internet coincide con una mejora de la tasa de empleo ecuatoriana en el periodo. Esto es compatible con mecanismos como mejor acceso a información, mercados y oportunidades de trabajo, pero no demuestra que uno cause el otro.
+
+Se recomienda ampliar el estudio con más países o información subnacional y microdatos, incorporar indicadores de calidad y asequibilidad de conectividad, y distinguir empleo formal, informal, juvenil y por sexo. Cualquier decisión de política debe complementarse con evidencia causal y contexto institucional.
+
+# Limitaciones
+
+- Muestra pequeña: cuatro países y cinco años.
+- El indicador de conectividad mide uso de internet, no calidad, habilidades digitales ni tipo de empleo.
+- Las estimaciones laborales modeladas mejoran comparabilidad, pero no sustituyen el análisis de fuentes nacionales.
+- El estudio documenta asociaciones; no identifica causalidad.
+
+# Referencias
+
+- Banco Mundial. *World Development Indicators*. https://databank.worldbank.org/source/world-development-indicators
+- Unión Internacional de Telecomunicaciones. *ITU DataHub*. https://datahub.itu.int/
+- Organización Internacional del Trabajo. *ILOSTAT*. https://ilostat.ilo.org/data/bulk/
+
+# Anexos
+
+Los archivos `data/raw/wdi_manifest_2020_2025.json`, `data/processed/processing_manifest.json`, `outputs/reports/data_quality.md` y `outputs/tables/model_results.csv` contienen la trazabilidad técnica del análisis.

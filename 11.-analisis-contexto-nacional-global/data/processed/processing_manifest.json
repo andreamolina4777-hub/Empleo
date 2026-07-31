@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-07-31T05:54:52.422143+00:00",
+  "input_manifest": "wdi_manifest_2020_2025.json",
+  "period": {
+    "start": 2020,
+    "end": 2024
+  },
+  "rows": 80,
+  "operation": "Selección de años 2020–2024, normalización de nombres de columnas y consolidación long-form; sin imputación ni modificación de valores."
+}

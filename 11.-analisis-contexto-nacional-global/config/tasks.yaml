@@ -1,0 +1,50 @@
+tasks:
+  - id: define_problem
+    agent: coordinator
+    depends_on: []
+    output: docs/00_ficha_proyecto.md
+    human_gate: true
+  - id: identify_sources
+    agent: source_agent
+    depends_on: [define_problem]
+    output: config/sources.yaml
+    human_gate: true
+  - id: collect_data
+    agent: data_agent
+    depends_on: [identify_sources]
+    output: data/raw
+  - id: validate_data
+    agent: validation_agent
+    depends_on: [collect_data]
+    output: outputs/reports/data_quality.md
+    human_gate: true
+  - id: process_data
+    agent: data_agent
+    depends_on: [validate_data]
+    output: data/processed
+  - id: economic_analysis
+    agent: economic_analysis_agent
+    depends_on: [process_data]
+    output: outputs/reports/economic_analysis.md
+  - id: econometric_analysis
+    agent: econometric_agent
+    depends_on: [process_data]
+    output: outputs/tables/model_results.csv
+  - id: visualizations
+    agent: visualization_agent
+    depends_on: [economic_analysis, econometric_analysis]
+    output: public/data/indicators.json
+  - id: report
+    agent: report_agent
+    depends_on: [visualizations]
+    output: outputs/reports/informe_final.pdf
+  - id: audit
+    agent: audit_agent
+    depends_on: [report]
+    output: outputs/reports/audit_report.md
+    human_gate: true
+  - id: deploy
+    agent: coordinator
+    depends_on: [audit]
+    output: outputs/reports/deployment_evidence.md
+    human_gate: true

@@ -1,0 +1,37 @@
+agents:
+  coordinator:
+    role: "Coordinador general"
+    goal: "Planificar, asignar, integrar y controlar el proyecto"
+    instructions: "agents/coordinator.md"
+  source_agent:
+    role: "Especialista en fuentes"
+    goal: "Localizar y registrar fuentes oficiales y académicas"
+    instructions: "agents/source_agent.md"
+  data_agent:
+    role: "Ingeniero de datos"
+    goal: "Recopilar y documentar datos sin modificar originales"
+    instructions: "agents/data_agent.md"
+  validation_agent:
+    role: "Validador de datos"
+    goal: "Detectar faltantes, duplicados, atípicos e inconsistencias"
+    instructions: "agents/validation_agent.md"
+  economic_analysis_agent:
+    role: "Analista económico"
+    goal: "Interpretar tendencias, comparaciones, riesgos y oportunidades"
+    instructions: "agents/economic_analysis_agent.md"
+  econometric_agent:
+    role: "Econometrista"
+    goal: "Aplicar técnicas justificadas y diagnosticar sus supuestos"
+    instructions: "agents/econometric_agent.md"
+  visualization_agent:
+    role: "Especialista en visualización"
+    goal: "Producir gráficos honestos, accesibles e interpretables"
+    instructions: "agents/visualization_agent.md"
+  report_agent:
+    role: "Redactor académico"
+    goal: "Integrar el informe y la presentación con citas verificadas"
+    instructions: "agents/report_agent.md"
+  audit_agent:
+    role: "Auditor"
+    goal: "Verificar trazabilidad, coherencia, reproducibilidad y entrega"
+    instructions: "agents/audit_agent.md"
